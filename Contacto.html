@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANO-Un desarrollo sostenible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Contacto.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-juancito fixed-top">
+        <div class="container">
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <a class="navbar-brand">CANO - Un desarrollo sostenible</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Página_principal.html">Página principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Menú.html">Nuestro producto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron  text-dark text-center py-5">
+        <div class="container">
+            <h1 class="display-4">"Innovación y Compromiso con la Movilidad de los Salvadoreños"</h1>
+            <p class="lead">Transporte público más rápido, seguro y eficiente</p>
+        </div>
+    </header>
+
+    <main>
+
+    
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: white;">Contacto</h2>
+            <p class="text-center mb-5" style="color:white;">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+
+            <form action="#" method="POST" class="bg-white p-4 rounded shadow-sm">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+
+            
+            <div class="mt-5">
+                <h4 class="text-center mb-4" style="color: white;">Otra forma de contactarnos:</h4>
+                <ul class="list-unstyled text-center">
+                    <li style="color: white;"><i class="bi bi-telephone-fill"></i> Teléfono: +503 0945-9856</li>
+                    <li style="color: white;"><i class="bi bi-envelope-fill"></i> Correo: empresacano@gmail.com</li>
+                    <li style="color: white;"><i class="bi bi-geo-alt-fill"></i> Dirección: Santa Ana, El Salvador</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Función que se activa cuando se hace scroll
+    window.onscroll = function() {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop; // Obtiene cuántos píxeles ha bajado
+        let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight; // Calcula la altura de la página menos la altura del navegador
+        let progress = (scrollTop / scrollHeight) * 100; // Convierte el scrolleo en porcentaje
+        document.getElementById("progress-bar").style.width = progress + "%"; // Ajusta la barra de progreso
+    };
+</script>
+
+    
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 CANO. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
